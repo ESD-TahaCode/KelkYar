@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="lapis">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>کلک‌یار</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Aref+Ruqaa+Ink:wght@400;700&family=Cairo:wght@400;600;700&family=Changa:wght@400;600;700&family=El+Messiri:wght@400;500;600;700&family=Harmattan:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Katibeh&family=Lalezar&family=Lateef:wght@400;500;600;700&family=Lemonada:wght@400;500;600;700&family=Mada:wght@400;500;600;700&family=Markazi+Text:wght@400;500;600;700&family=Mirza:wght@400;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Rakkas&family=Readex+Pro:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&family=Tajawal:wght@400;500;700&family=Vazirmatn:wght@300;400;600;800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gulzar&family=Kufam:wght@400;700&family=Marhey:wght@400;700&family=Alexandria:wght@400;700&family=Rubik:wght@400;700&family=Baloo+Bhaijaan+2:wght@400;700&family=Blaka&family=Blaka+Ink&family=Jomhuria&family=Playpen+Sans+Arabic:wght@400;700&family=Zain:wght@400;700&family=Almarai:wght@400;700&family=Reem+Kufi+Fun:wght@400;700&family=Reem+Kufi+Ink&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;500;600;700;800;900&family=Aref+Ruqaa+Ink:wght@400;500;600;700;800;900&family=Badeen+Display:wght@400;500;600;700;800;900&family=Baloo+Bhaijaan+2:wght@400;500;600;700;800;900&family=Cairo:wght@400;500;600;700;800;900&family=Cairo+Play:wght@400;500;600;700;800;900&family=Changa:wght@400;500;600;700;800;900&family=El+Messiri:wght@400;500;600;700;800;900&family=Fustat:wght@400;500;600;700;800;900&family=Gulzar:wght@400;500;600;700;800;900&family=Harmattan:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;800;900&family=Jomhuria:wght@400;500;600;700;800;900&family=Katibeh:wght@400;500;600;700;800;900&family=Lalezar:wght@400;500;600;700;800;900&family=Lateef:wght@400;500;600;700;800;900&family=Lemonada:wght@400;500;600;700;800;900&family=Mada:wght@400;500;600;700;800;900&family=Marhey:wght@400;500;600;700;800;900&family=Markazi+Text:wght@400;500;600;700;800;900&family=Mirza:wght@400;500;600;700;800;900&family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&family=Noto+Naskh+Arabic:wght@400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&family=Noto+Serif+Arabic:wght@400;500;600;700;800;900&family=Qahiri:wght@400;500;600;700;800;900&family=Rakkas:wght@400;500;600;700;800;900&family=Readex+Pro:wght@400;500;600;700;800;900&family=Reem+Kufi:wght@400;500;600;700;800;900&family=Reem+Kufi+Fun:wght@400;500;600;700;800;900&family=Ruwudu:wght@400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&family=Scheherazade+New:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;600;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&family=Zain:wght@400;500;600;700;800;900&family=Amiri:wght@400;500;600;700;800;900&family=Almarai:wght@400;500;600;700;800;900&family=Kufam:wght@400;500;600;700;800;900&family=Changa+One:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic+UI:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic+SemiCondensed:wght@400;500;600;700;800;900&family=Noto+Serif+Arabic+SemiCondensed:wght@400;500;600;700;800;900&family=Mitr:wght@400;500;600;700;800;900&family=Noto+Sans:wght@400;500;600;700;800;900&family=Noto+Serif:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700;800;900&family=Bebas+Neue:wght@400;500;600;700;800;900&family=Archivo+Black:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@400;500;600;700;800;900&family=DM+Serif+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="52x52" href="assets/favicon/icon.png" />
+  <link href="assets/styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- صفحه ورود چندمرحله‌ای -->
+  <div class="splash" id="splash">
+    <div class="splash-content">
+      <button class="splash-skip" id="splashSkip" type="button">رد کردن ⏭</button>
+
+      <!-- Step 1: خوش‌آمد -->
+      <div class="splash-step active" data-step="1">
+        <div class="splash-badge">طرح‌یار</div>
+        <img class="splash-hero" src="assets/images/setup.jpg" alt="طرح‌یار" />
+        <h2>به کلک‌یار خوش آمدید</h2>
+        <div class="splash-sub">تایپوگرافی موبایلی · خوشنویسی دیجیتال</div>
+        <p class="splash-desc">قبل از شروع سایت، این مراحل را انجام دهید</p>
+        <button class="splash-btn next-btn" data-next="2">ادامه</button>
+      </div>
+
+      <!-- Step 2: صلوات امام زمان -->
+      <div class="splash-step" data-step="2">
+        <div class="splash-badge">شرط استفاده</div>
+        <div class="splash-condition">
+          <div class="label">لطفاً توجه کنید</div>
+          <p>
+            صلوات در فرج و تعجیل<br />
+            مولایمان <span class="name">حجت ابن الحسن (عج)</span>
+          </p>
+        </div>
+        <div class="splash-footer" style="margin-bottom:24px;">اللّهمّ عجّل لولیّک الفرج</div>
+        <div class="splash-nav">
+          <button class="splash-btn secondary prev-btn" data-prev="1">قبلی</button>
+          <button class="splash-btn next-btn" data-next="3">ادامه</button>
+        </div>
+      </div>
+
+      <!-- Step 3: صلوات رهبری -->
+      <div class="splash-step" data-step="3">
+        <div class="splash-badge">صلوات</div>
+        <div class="splash-condition">
+          <div class="label">یاد و دعا</div>
+          <p>
+            صلوات برای شادی روح<br />
+            <span class="name">رهبر شهید</span><br />
+            و سلامتی<br />
+            <span class="name">رهبر معظم انقلاب</span>
+          </p>
+        </div>
+        <div class="splash-nav">
+          <button class="splash-btn secondary prev-btn" data-prev="2">قبلی</button>
+          <button class="splash-btn next-btn" data-next="4">ادامه</button>
+        </div>
+      </div>
+
+      <!-- Step 4: عضویت در کانال -->
+      <div class="splash-step" data-step="4">
+        <div class="splash-badge">عضویت</div>
+        <div class="splash-condition">
+          <div class="label">کانال طرح‌یار</div>
+          <p>
+            لطفاً در کانال ما عضو شوید
+          </p>
+        </div>
+        <a class="splash-btn" href="https://eitaa.com/joinchat/2931099300C4d674450dc" target="_blank" rel="noopener"
+          style="display:inline-block; text-decoration:none; margin-bottom:16px;">
+          📢 عضویت در کانال
+        </a>
+        <div class="splash-nav">
+          <button class="splash-btn secondary prev-btn" data-prev="3">قبلی</button>
+          <button class="splash-btn" id="enterBtn">ورود به کلک‌یار</button>
+        </div>
+      </div>
+
+      <!-- Progress dots -->
+      <div class="splash-dots">
+        <span class="dot active" data-dot="1"></span>
+        <span class="dot" data-dot="2"></span>
+        <span class="dot" data-dot="3"></span>
+        <span class="dot" data-dot="4"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <header class="top">
+    <div class="wrap bar">
+      <div class="brand" data-i18n="brand">کلک‌یار</div>
+      <nav class="tabs" id="tabs">
+        <button class="tab active" data-tab="editor" data-i18n="tab_editor"></button>
+        <button class="tab" data-tab="studio">استودیو طراحی</button>
+        <button class="tab" data-tab="logo" data-i18n="tab_logo"></button>
+        <button class="tab" data-tab="fonts" data-i18n="tab_fonts"></button>
+        <button class="tab" data-tab="library" data-i18n="tab_library"></button>
+      </nav>
+      <div class="tools"><select id="langSel">
+          <option value="fa">فارسی</option>
+          <option value="ar">العربية</option>
+          <option value="en">English</option>
+        </select>
+        <label class="theme-select-wrap"><span>تم</span><select id="themeSelect" aria-label="تم">
+            <option value="lapis">لازورد</option>
+            <option value="teal">فیروزه‌ای</option>
+            <option value="plum">آلوچه‌ای</option>
+            <option value="sand">شنی</option>
+            <option value="night">شب</option>
+            <option value="emerald">زمردی</option>
+          </select></label>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="panel active" id="panel-editor">
+      <div class="cols">
+        <div>
+          <textarea class="field" id="ta" rows="2" data-i18n-ph="ed_ph"></textarea>
+          <div class="stage" id="stage" tabindex="0" data-ph=""></div>
+          <p class="hint" data-i18n="ed_hint"></p>
+        </div>
+        <div class="side">
+          <section><label class="row"><span data-i18n="ed_font"></span><select id="fontSel"></select></label><label
+              class="row"><span data-i18n="ed_size"></span><input type="range" id="sizeR" min="28" max="120"
+                value="60"></label></section>
+          <section class="qstyle">
+            <h2>ظاهر متن</h2>
+            <label class="row"><span>رنگ متن</span><input type="color" id="stFg" value="#16203a"></label>
+            <label class="row"><span>رنگ زمینه</span><input type="color" id="stBg" value="#ffffff"></label>
+            <div class="btns" id="stAlign"><button class="btn" data-a="right" type="button">راست</button><button
+                class="btn" data-a="center" type="button">وسط</button><button class="btn" data-a="left"
+                type="button">چپ</button></div>
+            <div class="btns"><button class="btn" id="stMove" type="button">✥ جابجایی متن (کشیدن)</button><button
+                class="btn" id="stPos" type="button">مرکز کردن</button></div>
+            <div class="btns"><button class="btn primary" id="stPng" type="button">⬇ ذخیره تصویر PNG</button><button
+                class="btn" id="stReset" type="button">بازنشانی رنگ‌ها</button></div>
+          </section>
+          <section>
+            <h2 data-i18n="ed_marks"></h2>
+            <div id="marksGrid"></div>
+          </section>
+          <section>
+            <h2 data-i18n="ed_letter"></h2>
+            <div class="nav"><button class="btn" id="prevB" data-i18n="ed_prev"></button><span class="big"
+                id="selLetter">–</span><button class="btn" id="nextB" data-i18n="ed_next"></button><button class="btn"
+                id="kAdd" data-i18n="ed_kash_add"></button><button class="btn" id="kDel"
+                data-i18n="ed_kash_del"></button></div>
+            <div id="chips"></div>
+            <p class="hint" id="selMsg"></p>
+          </section>
+          <section id="movePanel" class="off">
+            <h2 data-i18n="ed_move"></h2><label class="row"><span data-i18n="ed_x"></span><input type="range" id="mx"
+                min="-1" max="1" step=".01" value="0"></label><label class="row"><span data-i18n="ed_y"></span><input
+                type="range" id="my" min="-1" max="1" step=".01" value="0"></label>
+            <div class="btns"><button class="btn" id="resetM" data-i18n="ed_reset"></button></div>
+            <div class="pad" dir="ltr"><span></span><button class="btn" data-n="0,1">▲</button><span></span><button
+                class="btn" data-n="-1,0">◀</button><span></span><button class="btn"
+                data-n="1,0">▶</button><span></span><button class="btn" data-n="0,-1">▼</button><span></span></div>
+            <p class="hint" data-i18n="ed_arrows"></p>
+          </section>
+          <section>
+            <div class="btns"><button class="btn primary" id="copyB" data-i18n="ed_copy"></button><button class="btn"
+                id="clearB" data-i18n="ed_clear"></button><button class="btn" id="saveKly"
+                data-i18n="kly_export"></button><button class="btn" id="openKly" data-i18n="kly_import"></button><input
+                id="klyFile" type="file" accept=".kly,application/json" hidden></div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-studio">
+      <div class="qs-work">
+        <div class="qs-canvas"><canvas id="c" width="720" height="900"></canvas>
+          <div id="studioGrid"></div>
+        </div>
+        <div class="qs-side">
+          <div class="studio-quick">
+            <button type="button" id="studioUndo">↶ واگرد</button>
+            <button type="button" id="studioRedo">↷ ازنو</button>
+            <button type="button" id="studioCenter">🎯 مرکز</button>
+            <button type="button" id="studioGridBtn">▦ گرید</button>
+            <button type="button" id="studioSquare">□ مربع</button>
+          </div>
+          <div class="studio-sizebar">
+            <span>اندازه:</span>
+            <button type="button" class="studio-size on" data-studio-size="story">📱 استوری</button>
+            <button type="button" class="studio-size" data-studio-size="post">▣ پست</button>
+            <button type="button" class="studio-size" data-studio-size="wallpaper">🖥 والپیپر</button>
+            <button type="button" class="studio-size" data-studio-size="poster">▤ پوستر</button>
+          </div>
+          <div class="studio-layers card">
+            <div class="section-title">لایه‌ها <small>برای انتخاب، روی هر لایه بزن</small></div>
+            <div class="studio-layer-add"><button type="button" class="preset" id="addTextLayer">＋ لایه
+                متن</button><button type="button" class="preset" id="addShapeLayer">＋ لایه شکل</button></div>
+            <div id="studioLayers"></div>
+          </div>
+          <div class="actions"><button class="btn primary" id="save" type="button">⬇ ذخیره PNG</button></div>
+          <div class="controls">
+            <!-- TEXT -->
+            <div class="card">
+              <label>✦ متن اصلی</label>
+              <input id="text" type="text" value="اینجا متفاوت طراحی کن" />
+            </div>
+
+            <!-- IMAGE -->
+            <div class="card">
+              <div class="section-title">تصویر</div>
+              <div class="row" style="margin-bottom:10px;">
+                <label class="font-upload-btn" for="imgFile" style="flex:1;text-align:center;">
+                  📷 انتخاب تصویر
+                </label>
+                <input type="file" id="imgFile" accept="image/*" style="display:none;" />
+                <button class="preset" id="removeImg" style="display:none;">حذف تصویر</button>
+              </div>
+              <div class="row">
+                <div class="half">
+                  <label>شکل دور تصویر</label>
+                  <select id="imgShape">
+                    <option value="none">بدون شکل</option>
+                    <option value="circle">دایره</option>
+                    <option value="rounded">گوشه‌گرد</option>
+                    <option value="square">مربع</option>
+                    <option value="hex">شش‌ضلعی</option>
+                  </select>
+                </div>
+                <div class="half">
+                  <label>اندازه تصویر <small id="imgSizeVal">(180)</small></label>
+                  <input id="imgSize" class="range" type="range" min="60" max="700" value="180" />
+                </div>
+              </div>
+              <div class="save-hint" style="margin-top:8px;">با ماوس یا انگشت تصویر و متن رو جابه‌جا کن</div>
+            </div>
+
+            <!-- SHAPE -->
+            <div class="card">
+              <div class="section-title">شکل</div>
+              <div class="row" style="margin-bottom:10px; gap:12px;">
+                <label class="check-row" style="margin:0;">
+                  <input id="shapeToggle" type="checkbox" />
+                  نمایش شکل
+                </label>
+                <label class="check-row" style="margin:0;">
+                  <input id="shapeFillEnabled" type="checkbox" checked />
+                  پر شدن
+                </label>
+              </div>
+              <div class="row" style="margin-bottom:10px;">
+                <div class="half">
+                  <label>نوع شکل</label>
+                  <select id="shapeType">
+                    <option value="circle">دایره / بیضی</option>
+                    <option value="square">مربع / مستطیل</option>
+                    <option value="rounded">گوشه‌گرد</option>
+                    <option value="hex">شش‌ضلعی</option>
+                  </select>
+                </div>
+                <div class="half">
+                  <label>ضخامت خط <small id="shapeLineVal">(4)</small></label>
+                  <input id="shapeLine" class="range" type="range" min="1" max="20" value="4" />
+                </div>
+              </div>
+              <div class="row" style="margin-bottom:10px;">
+                <div class="half">
+                  <label>عرض <small id="shapeWVal">(160)</small></label>
+                  <input id="shapeW" class="range" type="range" min="30" max="900" value="160" />
+                </div>
+                <div class="half">
+                  <label>ارتفاع <small id="shapeHVal">(160)</small></label>
+                  <input id="shapeH" class="range" type="range" min="30" max="900" value="160" />
+                </div>
+              </div>
+              <div class="row" style="margin-bottom:10px;">
+                <div class="half">
+                  <label>چرخش شکل <small id="shapeRotVal">(0°)</small></label>
+                  <input id="shapeRot" class="range" type="range" min="-180" max="180" value="0" />
+                </div>
+                <div class="half">
+                  <label>شفافیت <small id="shapeOpacityVal">(100%)</small></label>
+                  <input id="shapeOpacity" class="range" type="range" min="5" max="100" value="100" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="half">
+                  <label>رنگ پرکننده</label>
+                  <div class="row">
+                    <input id="shapeFill" type="color" value="#1e1e2e" />
+                    <button class="preset" data-shape-fill="#1e1e2e">تیره</button>
+                    <button class="preset" data-shape-fill="#ffffff">سفید</button>
+                    <button class="preset" data-shape-fill="#ffd56a">طلایی</button>
+                  </div>
+                </div>
+                <div class="half">
+                  <label>رنگ خط دور</label>
+                  <div class="row">
+                    <input id="shapeStroke" type="color" value="#ffffff" />
+                    <button class="preset" data-shape-stroke="#ffffff">سفید</button>
+                    <button class="preset" data-shape-stroke="#93c5fd">آبی</button>
+                    <button class="preset" data-shape-stroke="#f9a8d4">صورتی</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FONT -->
+            <div class="card">
+              <div class="row">
+                <div class="half">
+                  <label>
+                    فونت‌های رایگان کلک‌یار
+                    <small style="color: #a5b4fc"> ● ۵۰+ فونت رایگان برای پوستر و تایپوگرافی </small>
+                  </label>
+                  <select id="font">
+                    <optgroup label="✦ نستعلیق و خوشنویسی">
+                      <option value="Aref Ruqaa">عارف رقعه</option>
+                      <option value="Aref Ruqaa Ink">عارف رقعه مرکب</option>
+                      <option value="Badeen Display">بدین دیسپلی</option>
+                      <option value="Gulzar">گلزار</option>
+                      <option value="Katibeh">کتیبه</option>
+                      <option value="Lateef">لطیف</option>
+                      <option value="Mirza">میرزا</option>
+                      <option value="Noto Nastaliq Urdu">نوتو نستعلیق اردو</option>
+                      <option value="Qahiri">قهیری</option>
+                      <option value="Rakkas">رقاص</option>
+                      <option value="Ruwudu">روودو</option>
+                    </optgroup>
+                    <optgroup label="✦ نمایشی و خفن">
+                      <option value="Baloo Bhaijaan 2">بالو بهیجان ۲</option>
+                      <option value="Cairo Play">قاهره پلی</option>
+                      <option value="Changa">چانگا</option>
+                      <option value="Jomhuria">جمهوری</option>
+                      <option value="Lalezar">لاله‌زار</option>
+                      <option value="Lemonada">لیمونادا</option>
+                      <option value="Marhey">مرحی</option>
+                      <option value="Noto Kufi Arabic">نوتو کوفی عربی</option>
+                      <option value="Reem Kufi">ریم کوفی</option>
+                      <option value="Reem Kufi Fun">ریم کوفی فان</option>
+                      <option value="Kufam">کوفام</option>
+                      <option value="Changa One">چانگا وان</option>
+                    </optgroup>
+                    <optgroup label="✦ لاتین و ترکیبی">
+                      <option value="Cairo">قاهره</option>
+                      <option value="Noto Sans Arabic SemiCondensed">نوتو سنس عربی فشرده</option>
+                      <option value="Noto Serif Arabic SemiCondensed">نوتو سریف عربی فشرده</option>
+                      <option value="Mitr">میتر</option>
+                      <option value="Noto Sans">نوتو سنس</option>
+                      <option value="Noto Serif">نوتو سریف</option>
+                      <option value="Roboto">Roboto</option>
+                      <option value="Poppins">Poppins</option>
+                      <option value="Montserrat">Montserrat</option>
+                      <option value="Oswald">Oswald</option>
+                      <option value="Bebas Neue">Bebas Neue</option>
+                      <option value="Archivo Black">Archivo Black</option>
+                      <option value="Playfair Display">Playfair Display</option>
+                      <option value="Cormorant Garamond">Cormorant Garamond</option>
+                      <option value="DM Serif Display">DM Serif Display</option>
+                      <option value="Space Grotesk">Space Grotesk</option>
+                      <option value="Alexandria">اسکندریه</option>
+                      <option value="Playpen Sans Arabic">پلی‌پن عربی</option>
+                      <option value="Blaka">بلاکا</option>
+                      <option value="Blaka Ink">بلاکا مرکب</option>
+                      <option value="Reem Kufi Ink">ریم کوفی مرکب</option>
+                    </optgroup>
+                    <optgroup label="✦ نسخ و کلاسیک">
+                      <option value="El Messiri">المسیری</option>
+                      <option value="Harmattan">هرمَتان</option>
+                      <option value="Markazi Text">مرکزی تکست</option>
+                      <option value="Noto Naskh Arabic">نوتو نسخ عربی</option>
+                      <option value="Noto Serif Arabic">نوتو سریف عربی</option>
+                      <option value="Scheherazade New">شهرزاد جدید</option>
+                      <option value="Amiri">امیری</option>
+                    </optgroup>
+                    <optgroup label="✦ فارسی و مدرن">
+                      <option value="Fustat">فستات</option>
+                      <option value="IBM Plex Sans Arabic">آی‌بی‌ام پلکس عربی</option>
+                      <option value="Mada">مادا</option>
+                      <option value="Noto Sans Arabic">نوتو سنس عربی</option>
+                      <option value="Readex Pro">ریدکس پرو</option>
+                      <option value="Rubik">روبیک</option>
+                      <option value="Tajawal">تجوّل</option>
+                      <option value="Vazirmatn">وزیرمتن</option>
+                      <option value="Zain">زین</option>
+                      <option value="Almarai">المراعی</option>
+                      <option value="Noto Sans Arabic UI">نوتو سنس عربی رابط</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <div class="half">
+                  <label>
+                    اندازه متن
+                    <small id="sizeVal"> (72) </small>
+                  </label>
+                  <input id="size" class="range" type="range" min="18" max="220" value="72" />
+                </div>
+              </div>
+
+              <div class="font-upload">
+                <label class="font-upload-btn" for="fontFile">
+                  + افزودن فونت شخصی
+                </label>
+                <input type="file" id="fontFile" accept=".ttf,.otf,.woff,.woff2" />
+                <span class="custom-font-name" id="customFontLabel"></span>
+              </div>
+            </div>
+
+            <!-- COLOR -->
+            <div class="card">
+              <label>✦ رنگ متن</label>
+              <div class="row">
+                <input id="color" type="color" value="#ffffff" />
+                <button class="preset" data-color="#ffffff">سفید</button>
+                <button class="preset" data-color="#f5e6c8">کرم</button>
+                <button class="preset" data-color="#ffd56a">طلایی</button>
+                <button class="preset" data-color="#f9a8d4">صورتی</button>
+                <button class="preset" data-color="#93c5fd">آبی</button>
+                <button class="preset" data-color="#6ee7b7">سبز</button>
+              </div>
+            </div>
+
+            <!-- ROTATE -->
+            <div class="card">
+              <label>
+                چرخش
+                <small id="rotVal"> (۰°) </small>
+              </label>
+              <input id="rotate" class="range" type="range" min="-30" max="30" value="0" />
+            </div>
+
+            <!-- EFFECTS -->
+            <div class="card">
+              <label>✦ افکت‌ها</label>
+              <div class="check-row">
+                <label>
+                  <input id="shadow" type="checkbox" checked />
+                  سایه
+                </label>
+                <label>
+                  <input id="stroke" type="checkbox" />
+                  دورخط
+                </label>
+                <label>
+                  <input id="glow" type="checkbox" />
+                  درخشش
+                </label>
+              </div>
+            </div>
+
+            <!-- BACKGROUND -->
+            <div class="card">
+              <div class="section-title">پس‌زمینه</div>
+              <div class="bg-options">
+                <button class="bg-btn active" data-bg="dark">تیره</button>
+
+                <button class="bg-btn" data-bg="gradient">نئون</button>
+                <button class="bg-btn" data-bg="clean">شفاف</button>
+              </div>
+            </div>
+
+            <!-- SUB -->
+            <div class="card">
+              <label>متن کوچک (فقط پیش‌نمایش)</label>
+              <input id="sub" type="text" value="CREATE · DESIGN · AI" />
+            </div>
+
+            <!-- READY TEXTS -->
+            <div class="card">
+              <div class="section-title">متن‌های آماده</div>
+              <div class="ready-texts">
+                <button type="button" class="preset" data-ready-text="اینجا متفاوت طراحی کن">اینجا متفاوت طراحی
+                  کن</button>
+                <button type="button" class="preset" data-ready-text="با عشق بساز">با عشق بساز</button>
+                <button type="button" class="preset" data-ready-text="ساده، اما خاص">ساده، اما خاص</button>
+                <button type="button" class="preset" data-ready-text="رویا را طراحی کن">رویا را طراحی کن</button>
+                <button type="button" class="preset" data-ready-text="هر روز یک قدم جلوتر">هر روز یک قدم جلوتر</button>
+                <button type="button" class="preset" data-ready-text="خلق کن، متفاوت باش">خلق کن، متفاوت باش</button>
+                <button type="button" class="preset" data-ready-text="زندگی زیباست">زندگی زیباست</button>
+                <button type="button" class="preset" data-ready-text="Make it simple.">Make it simple.</button>
+                <button type="button" class="preset" data-ready-text="Create something great.">Create something
+                  great.</button>
+                <button type="button" class="preset" data-ready-text="Dream • Design • Create">Dream • Design •
+                  Create</button>
+              </div>
+            </div>
+
+            <!-- PRESETS -->
+            <div class="card">
+              <div class="section-title">قالب‌های آماده</div>
+              <div class="row">
+                <button class="preset" data-preset="poster">پوستر</button>
+                <button class="preset" data-preset="minimal">مینیمال</button>
+                <button class="preset" data-preset="bold">Bold</button>
+                <button class="preset" data-preset="elegant">شیک</button>
+                <button class="preset" data-preset="neon">نئون</button>
+                <button class="preset" data-preset="nastaliq">نستعلیق</button>
+              </div>
+            </div>
+
+            <!-- ACTIONS -->
+            <div class="actions">
+              <button class="btn secondary" id="random">✦ ترکیب تصادفی</button>
+              <button class="btn primary" id="clear">پاک‌سازی</button>
+            </div>
+
+            <div class="save-hint">
+              فونت‌های آنلاین هنگام باز بودن اینترنت بارگذاری می‌شوند؛ فونت شخصی را هم می‌توانی اضافه کنی.
+            </div>
+            <div class="save-hint">ذخیره فقط متن و طرح را می‌دهد</div>
+          </div>
+        </div>
+      </div>
+      <div id="fontPreloader"><span id="fontPreloaderText"> اینجا متفاوت طراحی کن </span></div>
+    </div>
+
+    <div class="panel" id="panel-logo">
+      <div class="cols">
+        <div>
+          <div class="canvasbox"><canvas id="logoCanvas" width="1000" height="700"></canvas></div>
+          <div class="btns" style="margin-top:14px"><button class="btn primary" id="lgDl"
+              data-i18n="lg_dl"></button><button class="btn" id="lgTransparent"
+              data-i18n="lg_transparent"></button><button class="btn" id="lgUse" data-i18n="lg_use"></button></div>
+        </div>
+        <div class="side">
+          <section><label class="row"><span data-i18n="lg_text"></span><input class="field" type="text" id="lgText"
+                dir="auto"></label><label class="row"><span data-i18n="lg_sub"></span><input class="field" type="text"
+                id="lgSub" dir="auto"></label><label class="row"><span data-i18n="lg_font"></span><select
+                id="lgFont"></select></label><label class="row"><span data-i18n="lg_size"></span><input type="range"
+                id="lgSize" min="40" max="100" value="85"></label></section>
+          <section>
+            <h2 data-i18n="lg_tpl"></h2>
+            <div class="seg" id="tplBtns"></div>
+          </section>
+          <section>
+            <h2 data-i18n="lg_theme"></h2>
+            <div class="seg" id="lgThemes"></div>
+            <div class="btns" style="margin-top:14px;gap:16px"><label class="row" style="margin:0"><span
+                  style="min-width:0" data-i18n="lg_bg"></span><input type="color" id="cBg"></label><label class="row"
+                style="margin:0"><span style="min-width:0" data-i18n="lg_fg"></span><input type="color"
+                  id="cFg"></label><label class="row" style="margin:0"><span style="min-width:0"
+                  data-i18n="lg_ac"></span><input type="color" id="cAc"></label></div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-fonts">
+      <p class="hint" style="margin-top:0" data-i18n="gl_hint"></p>
+      <div class="grid" id="gallery"></div>
+    </div>
+
+    <div class="panel" id="panel-library">
+      <div class="cols">
+        <div>
+          <h2 data-i18n="lib_title"></h2>
+          <div class="ready-grid" id="readyGrid"></div>
+        </div>
+        <div class="side">
+          <section>
+            <h2 data-i18n="kly_title"></h2>
+            <p class="hint" data-i18n="kly_hint"></p>
+            <div class="filebox"><button class="btn primary" id="libSave" data-i18n="kly_export"></button><button
+                class="btn" id="libOpen" data-i18n="kly_import"></button></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap" data-i18n="foot"></div>
+  </footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="assets/scripts/main.js" defer></script>
+</body>
+
+</html>
