@@ -32,7 +32,7 @@
 ابتدا مخزن را دریافت کنید:
 
 ```bash
-[git clone YOUR_REPOSITORY_URL](https://github.com/ESD-TahaCode/KelkYar.git)
+https://github.com/ESD-TahaCode/KelkYar.git
 ```
 
 سپس وارد پوشه پروژه شوید:
