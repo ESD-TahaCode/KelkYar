@@ -1,4 +1,4 @@
-    [data-theme="lapis"] {
+[data-theme="lapis"] {
       --bg: #eef1f7;
       --surface: #fff;
       --surface2: #e4e9f3;
@@ -1971,4 +1971,265 @@
       top: -9999px;
       opacity: 0;
       pointer-events: none
+    }
+
+
+    /* ===== KelkYar Studio responsive rebuild ===== */
+    html {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: clip;
+    }
+
+    body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: clip;
+    }
+
+    img, canvas, video, iframe, svg {
+      max-width: 100%;
+    }
+
+    .wrap,
+    main.wrap,
+    #panel-studio,
+    #panel-studio .qs-work,
+    #panel-studio .qs-canvas,
+    #panel-studio .qs-side,
+    #panel-studio .controls,
+    #panel-studio .card,
+    #panel-studio .studio-layers,
+    #panel-studio #studioLayers {
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    #panel-studio {
+      width: 100%;
+      overflow: clip;
+      padding-inline: 0;
+    }
+
+    #panel-studio .qs-work {
+      display: grid;
+      width: 100%;
+      grid-template-columns: minmax(0, 1fr);
+      align-items: start;
+      gap: clamp(12px, 2.5vw, 22px);
+    }
+
+    #panel-studio .qs-canvas {
+      position: relative;
+      width: 100%;
+      min-width: 0;
+      min-height: 0;
+      padding: clamp(6px, 1.5vw, 14px);
+      overflow: hidden;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    #panel-studio #c {
+      display: block;
+      width: min(100%, 720px);
+      max-width: 100%;
+      height: auto;
+      max-height: none;
+      aspect-ratio: 4 / 5;
+      object-fit: contain;
+      flex: 0 1 auto;
+    }
+
+    #panel-studio #studioGrid {
+      inset: clamp(6px, 1.5vw, 14px);
+      pointer-events: none;
+    }
+
+    #panel-studio .qs-side {
+      display: grid;
+      width: 100%;
+      gap: 12px;
+      overflow: visible;
+    }
+
+    #panel-studio .studio-quick {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      width: 100%;
+    }
+
+    #panel-studio .studio-quick button,
+    #panel-studio .studio-size,
+    #panel-studio .preset,
+    #panel-studio .bg-btn,
+    #panel-studio .btn,
+    #panel-studio .font-upload-btn {
+      min-width: 0;
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+
+    #panel-studio .studio-sizebar {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    #panel-studio .studio-layer {
+      min-width: 0;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+    }
+
+    #panel-studio .studio-layer .layer-name {
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+
+    #panel-studio .row,
+    #panel-studio .actions,
+    #panel-studio .check-row,
+    #panel-studio .bg-options {
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    #panel-studio input[type="text"],
+    #panel-studio input[type="number"],
+    #panel-studio select,
+    #panel-studio textarea {
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    @media (min-width: 900px) {
+      #panel-studio .qs-work {
+        grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
+        gap: 24px;
+      }
+
+      #panel-studio .qs-canvas {
+        position: sticky;
+        top: 124px;
+      }
+
+      #panel-studio .qs-side {
+        max-height: calc(100vh - 150px);
+        overflow-y: auto;
+        overflow-x: clip;
+        padding-inline-end: 4px;
+      }
+
+      #panel-studio .studio-quick {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 899px) {
+      main.wrap {
+        padding-top: 18px;
+      }
+
+      #panel-studio .qs-work {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      #panel-studio .qs-canvas {
+        position: relative;
+        width: 100%;
+        min-height: 0;
+      }
+
+      #panel-studio #c {
+        width: 100%;
+        max-width: 100%;
+        max-height: none;
+      }
+
+      #panel-studio .qs-side {
+        max-height: none;
+        overflow: visible;
+        padding: 0;
+      }
+
+      #panel-studio .actions {
+        position: sticky;
+        bottom: 8px;
+        z-index: 8;
+        flex-wrap: wrap;
+      }
+
+      #panel-studio .actions .btn {
+        flex: 1 1 140px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .wrap {
+        padding-inline: 12px;
+      }
+
+      #panel-studio .qs-work {
+        gap: 12px;
+      }
+
+      #panel-studio .qs-canvas {
+        padding: 5px;
+        border-radius: 14px;
+      }
+
+      #panel-studio .studio-quick {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+      }
+
+      #panel-studio .studio-quick button {
+        padding: 8px 5px;
+        font-size: 12px;
+      }
+
+      #panel-studio .studio-sizebar {
+        gap: 6px;
+      }
+
+      #panel-studio .studio-size {
+        flex: 1 1 calc(50% - 6px);
+        padding: 8px 6px;
+      }
+
+      #panel-studio .card {
+        padding: 11px;
+      }
+
+      #panel-studio .half {
+        min-width: 0;
+        width: 100%;
+      }
+
+      #panel-studio .row > * {
+        min-width: 0;
+      }
+
+      #panel-studio .actions {
+        position: static;
+        padding: 0;
+        background: transparent;
+        backdrop-filter: none;
+      }
+
+      #panel-studio .actions .btn {
+        min-height: 44px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #panel-studio *,
+      #panel-studio *::before,
+      #panel-studio *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+      }
     }

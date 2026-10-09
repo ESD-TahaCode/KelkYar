@@ -1,5 +1,4 @@
-  
-    (() => {
+(() => {
       'use strict';
       const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)], clamp = (v, a, b) => Math.min(b, Math.max(a, v));
       const mem = {}, store = { get(k) { try { let v = localStorage.getItem(k); if (v !== null) return v } catch (e) { } return mem[k] ?? null }, set(k, v) { mem[k] = v; try { localStorage.setItem(k, v) } catch (e) { } } };
@@ -1411,4 +1410,3 @@ INITIAL
 
       let started = false; document.querySelector('[data-tab="studio"]').addEventListener("click", () => { if (!started) { started = true; init() } else { safeDraw() } });
     })();
-  
